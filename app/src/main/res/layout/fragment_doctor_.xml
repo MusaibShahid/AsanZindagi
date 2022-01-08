@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/doctor"
+    android:orientation="vertical"
+    tools:context="Doctor_Fragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:duplicateParentState="false"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="#78909c"
+        app:cardCornerRadius="25sp"
+        app:menu="@menu/searchmenu">
+
+
+        <SearchView
+            android:id="@+id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:background="#CE807D7D"
+            android:queryHint="Search Fields" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

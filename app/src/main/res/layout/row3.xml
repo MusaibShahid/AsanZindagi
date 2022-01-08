@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/card3">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_centerVertical="true"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:src="@drawable/user1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            />
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is demo name"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_marginLeft="13dp"
+            />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/special_text"
+            android:layout_toLeftOf="@+id/special_text"
+            android:layout_toEndOf="@+id/img1"
+            android:layout_toRightOf="@+id/img1"
+            app:srcCompat="@drawable/statoscope" />
+        <TextView
+            android:id="@+id/special_text"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/segoeprb"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="This is Specialisation "
+            android:textColor="#f6941e"
+            android:textSize="17sp" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toStartOf="@+id/address"
+            android:layout_toLeftOf="@+id/address"
+            android:layout_toEndOf="@+id/img1"
+            android:layout_toRightOf="@+id/img1"
+            app:srcCompat="@drawable/clrloc" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="217dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/special_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="This is location demo"
+            android:textColor="#E6807D7D"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

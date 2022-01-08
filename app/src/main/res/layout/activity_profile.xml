@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".Profile">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/print"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="151dp"
+            android:layout_marginLeft="151dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="-8dp"
+            android:layout_marginRight="-8dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toStartOf="@+id/userholdername"
+            android:layout_toLeftOf="@+id/userholdername"
+            android:text="Advocate"
+            android:textColor="#fff"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/userholdername"
+            android:layout_width="128dp"
+            android:layout_height="35dp"
+            android:fontFamily="@font/segoepr"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="185dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="Name"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imgcard"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="10dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imglawyer"
+            android:layout_centerVertical="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/user1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Experties in "
+        android:id="@+id/specialtext"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/imgcard"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/specialholder"
+        android:layout_width="292dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal"
+        android:text="specialization"
+        android:textColor="#B4F57C00"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specialtext">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view1"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        >
+
+        /first sec
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/celendr"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:textColor="#f6941e"
+                    android:textSize="19dp"
+
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:id="@+id/dayholder"
+                    android:textSize="15dp"
+
+                    ></TextView>
+            </LinearLayout>
+
+
+            //first sec
+            //second sec
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/clock"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timings"
+                    android:textColor="#f6941e"
+                    android:textSize="19dp"
+
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timings"
+                    android:id="@+id/timeholder"
+                    android:textSize="15dp"
+
+                    ></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/money"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fees"
+                    android:textColor="#f6941e"
+                    android:textSize="19dp"
+
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/feeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fees"
+                    android:textSize="15dp"
+
+                    ></TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        //second sec
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:background="#f6941e"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1">
+
+        <ImageView
+            android:id="@+id/imgcal"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginRight="276dp"
+            android:src="@android:drawable/ic_menu_call"></ImageView>
+
+        <TextView
+            android:id="@+id/contactholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:text="contact"
+            android:textColor="#ffff"
+            android:textSize="16dp" />
+
+        //1 row
+
+        <ImageView
+            android:id="@+id/imgem"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginRight="276dp"
+            android:src="@android:drawable/ic_dialog_email"></ImageView>
+
+        <TextView
+            android:id="@+id/emailholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textEmailAddress"
+            android:text="@string/email"
+            android:textColor="#ffff"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgchat"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginRight="276dp"
+            android:src="@android:drawable/stat_notify_chat"></ImageView>
+
+        <TextView
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="56dp"
+            android:inputType="textEmailAddress"
+            android:text="not done yet"
+            android:textColor="#ffff"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/clrloc"></ImageView>
+
+
+        <TextView
+            android:id="@+id/addressholder"
+            android:layout_width="274dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/add"
+            android:layout_toRightOf="@+id/add"
+            android:text="Address"></TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/booking1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backgroud"
+        android:text="booking now"
+        android:textSize="24dp"
+        android:textColor="#f6941e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.126"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
